@@ -1,3 +1,4 @@
 body {
-  background-image: url("/Users/devswaroop/Desktop/Advanced CC/Advanced-CC-Lab-2024/Project 1/Pictures for P1/Background.png");
+  background-image: url("Pictures for P1/Background.jpeg");
+  background-size: cover; 
 }
