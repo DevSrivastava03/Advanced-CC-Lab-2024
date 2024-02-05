@@ -1,42 +1,27 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 body {
-  cursor: url('Pictures for P1/cursor.png'), auto; 
+  color: black;
+  background-color: black; /* Change background color to black */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative; /* Add this line */
 }
 
-
-
- 
-
-
-
-#bg-video {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%; 
-  height: auto; 
-  z-index: -1;
-}
-
-a {
-  font-size: 20px;
-  font-family: "ARCADE_I";
+h1 {
+  font-family: 'Shadows Into Light Regular', sans-serif; /* Use the specified font */
   color: white;
   text-align: center;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-decoration: none; /* Remove underline */
 }
 
-@font-face {
-  font-family: "ARCADE_I"; 
-  src: url("Fonts /ARCADE_I.TTF"); 
+li.fade-in {
+  color: white;
+  font-size: 12pt;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 200px; /* Adjust margin as needed */
 }
