@@ -10,6 +10,9 @@ body {
   margin: 0;
   position: relative;
 }
+h1 {
+  font-size: 45px; 
+}
 
 .top-heading {
   font-family: 'Shadows Into Light Regular', sans-serif; 
@@ -67,7 +70,7 @@ li.fade-in a:hover {
   height: auto;
   margin-right: 20px; 
   display: inline-block; 
-  animation: marquee 10s linear infinite; 
+  animation: marquee 30s linear infinite; 
 }
 
 @keyframes marquee {
