@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'PixelifySans', sans-serif; 
+    transform: translateY(-10px);
+    position: relative;
+    z-index: 1; 
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+
+.camera-image {
+    width: 500px; 
+    height: auto;
+    transform: translate(-10px, -180px);
+    position: relative;
+    
+}
+
