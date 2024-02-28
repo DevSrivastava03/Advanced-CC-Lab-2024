@@ -4,40 +4,70 @@ body {
     text-align: center;
     position: relative; 
 }
-
+area:hover {
+    cursor: url('pics/cursor.png'), auto;
+  }
+  
+  
 h1#camera-text {
     color: white;
     font-family: 'PixelifySans', sans-serif; 
-    transform: translateY(-10px);
+    transform: translate(-10px,-10px);
     position: relative;
     z-index: 1; 
 }
-.a {
-    text-decoration: none !important;
-}
-h1 {
-    color: white;
-    text-decoration: none;
-    font-family: 'PixelifySans';
-    
-}
-@font-face {
-    font-family: 'PixelifySans';
-    src: url('font/PixelifySans-VariableFont_wght.ttf') format('truetype');
-}
-
 .camera-image {
     width: 500px; 
     height: auto;
     transform: translate(-10px, -180px);
     position: relative;
+   
 }
 
+
+.a{
+    text-decoration: none;
+    
+}
+
+h1{
+    color: white;
+    text-decoration: none;
+    font-family: 'PixelifySans',sans-serif;
+}
+h1:hover {
+    color: green; /* Change the color to green on hover */
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('font/PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+
+.info-title {
+    position: absolute;
+    top: 580px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; 
+    font-family: 'StretchPro', sans-serif;
+}
+
+@font-face {
+    font-family: 'StretchPro';
+    src: url(font/StretchPro.otf);
+}
+
+/* Flexbox container for the boat */
+.boat-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Adjust as needed */
+}
+
+/* Boat styles */
 .boat {
-    width: 500px; 
-    margin: 0 auto; 
-    perspective: 1000px;
-    margin-top: 40px; 
+    width: 500px;
 }
 
 .boat__content {
@@ -68,10 +98,8 @@ h1 {
     background-blend-mode: overlay;
     font-family: 'Mogent', sans-serif; 
 }
-@font-face {
-    font-family:'Mogent';
-    src: url(font/Mogent.otf) format('truetype');
-}
+
+
 
 .boat__title {
     font-size: 3.5rem;
@@ -80,14 +108,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.boat__subtitle {
-    transform: var(--level-two);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: .75rem;
-    font-weight: var(--fw-bold);
-    opacity: .7;
-}
+
 
 .boat__body {
     transform: var(--level-two);
@@ -103,24 +124,15 @@ h1 {
 }
 
 
-.info-title {
-    position: absolute;
-    top: 580px; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2; 
-    font-family: 'StretchPro', sans-serif;
-}
-@font-face {
-    font-family: 'StretchPro';
-    src: url(font/StretchPro.otf);
+.chair-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
 }
 
+
 .chair {
-    width: 500px; 
-    margin: 0 auto; 
-    perspective: 1000px;
-    margin-top: 40px; 
+    width: 500px;
 }
 
 .chair__content {
@@ -151,9 +163,10 @@ h1 {
     background-blend-mode: overlay;
     font-family: 'Mogent', sans-serif; 
 }
+
 @font-face {
-    font-family:'Mogent';
-    src: url(font/Mogent.otf) format('truetype');
+    font-family: 'Mogent';
+    src: url(font/Mogent.otf);
 }
 
 .chair__title {
@@ -163,14 +176,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.chair__subtitle {
-    transform: var(--level-two);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: .75rem;
-    font-weight: var(--fw-bold);
-    opacity: .7;
-}
+/* Add styles for chair__subtitle if needed */
 
 .chair__body {
     transform: var(--level-two);
@@ -183,18 +189,5 @@ h1 {
     transform: rotateY(.5turn);
     color: var(--clr);
     background: #333;
-}
-
-.info-title {
-    position: absolute;
-    top: 580px; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2; 
-    font-family: 'StretchPro', sans-serif;
-}
-@font-face {
-    font-family: 'StretchPro';
-    src: url(font/StretchPro.otf);
 }
 
