@@ -12,7 +12,15 @@ h1#camera-text {
     position: relative;
     z-index: 1; 
 }
-
+.a {
+    text-decoration: none !important;
+}
+h1 {
+    color: white;
+    text-decoration: none;
+    font-family: 'PixelifySans';
+    
+}
 @font-face {
     font-family: 'PixelifySans';
     src: url('font/PixelifySans-VariableFont_wght.ttf') format('truetype');
@@ -29,7 +37,7 @@ h1#camera-text {
     width: 500px; 
     margin: 0 auto; 
     perspective: 1000px;
-    margin-top: 100px; 
+    margin-top: 40px; 
 }
 
 .boat__content {
@@ -97,7 +105,7 @@ h1#camera-text {
 
 .info-title {
     position: absolute;
-    top: 500px; 
+    top: 580px; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 2; 
@@ -107,3 +115,6 @@ h1#camera-text {
     font-family: 'StretchPro';
     src: url(font/StretchPro.otf);
 }
+
+
+
