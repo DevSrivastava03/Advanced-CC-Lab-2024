@@ -36,7 +36,7 @@ h1{
     font-family: 'PixelifySans',sans-serif;
 }
 h1:hover {
-    color: green; /* Change the color to green on hover */
+    color: green;
 }
 
 @font-face {
@@ -57,15 +57,13 @@ h1:hover {
     font-family: 'StretchPro';
     src: url(font/StretchPro.otf);
 }
-
-/* Flexbox container for the boat */
 .boat-container {
     display: flex;
     justify-content: center;
-    margin-top: 40px; /* Adjust as needed */
+    margin-top: 40px; 
 }
 
-/* Boat styles */
+
 .boat {
     width: 500px;
 }
@@ -175,8 +173,6 @@ h1:hover {
     order: 2;
     text-transform: uppercase;
 }
-
-/* Add styles for chair__subtitle if needed */
 
 .chair__body {
     transform: var(--level-two);
