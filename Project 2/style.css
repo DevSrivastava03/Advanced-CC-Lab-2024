@@ -2,9 +2,10 @@ body {
     background-color: black;
     color: white;
     text-align: center;
+    position: relative; 
 }
 
-h1 {
+h1#camera-text {
     color: white;
     font-family: 'PixelifySans', sans-serif; 
     transform: translateY(-10px);
@@ -14,7 +15,7 @@ h1 {
 
 @font-face {
     font-family: 'PixelifySans';
-    src: url('PixelifySans-VariableFont_wght.ttf') format('truetype');
+    src: url('font/PixelifySans-VariableFont_wght.ttf') format('truetype');
 }
 
 .camera-image {
@@ -22,6 +23,87 @@ h1 {
     height: auto;
     transform: translate(-10px, -180px);
     position: relative;
-    
 }
 
+.boat {
+    width: 500px; 
+    margin: 0 auto; 
+    perspective: 1000px;
+    margin-top: 100px; 
+}
+
+.boat__content {
+    text-align: center;
+    position: relative;
+    padding: 15em 5em;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+
+.boat:hover .boat__content {
+    transform: rotateY(180deg);
+}
+
+.boat__front,
+.boat__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5em 3em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    font-family: 'Mogent', sans-serif; 
+}
+@font-face {
+    font-family:'Mogent';
+    src: url(font/Mogent.otf) format('truetype');
+}
+
+.boat__title {
+    font-size: 3.5rem;
+    transform: var(--level-three);
+    order: 2;
+    text-transform: uppercase;
+}
+
+.boat__subtitle {
+    transform: var(--level-two);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    font-weight: var(--fw-bold);
+    opacity: .7;
+}
+
+.boat__body {
+    transform: var(--level-two);
+    font-weight: var(fw-normal);
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.boat__back {
+    transform: rotateY(.5turn);
+    color: var(--clr);
+    background: #333;
+}
+
+
+.info-title {
+    position: absolute;
+    top: 500px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; 
+    font-family: 'StretchPro', sans-serif;
+}
+@font-face {
+    font-family: 'StretchPro';
+    src: url(font/StretchPro.otf);
+}
